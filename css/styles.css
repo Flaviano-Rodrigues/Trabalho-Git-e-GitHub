@@ -1,0 +1,63 @@
+/* 
+    Nota: 
+        Para não deixar o Html totalmente cru eu coloquei um pouquinho só de CSS. 
+        Nada de mais, só alguns resets básicos no Html.
+
+*/
+
+
+/* Import da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* Resets Globais */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Estilizações Globais */
+html,
+body {
+    height: 100%;
+    padding: 10px;
+}
+
+/* Apenas uma estilização que uso como base para "Dark Mode". */
+.dark {
+    background-color: #333;
+    color: #ccc;
+}
+
+/* Container principal */
+.main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.subtitle {
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+/* Inputs do peso e da altura */
+input[type="tel"] {
+    padding-left: 10px;
+    height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Área com os inputs radio */
+.container-radio-inputs {
+    margin-bottom: 5px;
+}
+
+/* Botão de enviar */
+.submit-input {
+    padding: 3px 9px;
+}
