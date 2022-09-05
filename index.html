@@ -20,13 +20,13 @@
 
         <form class="form-imc" action="">
             <input id='peso' name="peso" type="tel" placeholder="Peso (Kg)">
-            <input id='altura' name="altura" type="tel" placeholder="Altura (cm)">
+            <input id='altura' name="altura" type="tel" placeholder="Altura (m), ex: 1.70">
 
             <div class="container-radio-inputs">
                 <input id='adulto' name="tipo" type="radio">
                 <label>Adulto</label>
 
-                <input name="tipo" type="radio">
+                <input id='idoso' name="tipo" type="radio">
                 <label>Idoso</label>
             </div>
             <button class="submit-input" type="button" value="Enviar" onclick="calculaImc()">
@@ -55,7 +55,7 @@
                 // Bloco 1 aqui:
                 // ...
                 // Fim do bloco 1.
-            } else { // Se não 'Adulto', realiza o bloco 2:
+            } else if(document.getElementById('idoso').checked) { // Se 'Idoso', realiza o bloco 2:
                 // Bloco 2 aqui:
                 if(imc <= 22) {
                     mensagem = 'Está abaixo do peso recomendado.'
@@ -65,7 +65,7 @@
                     mensagem = 'Ta bem tratado, ta bem tratado...'
                 }
                 // Fim do bloco 2.
-            }
+            } else alert("Por favor selecione se Adulto ou Idoso. Grato!");
 
             return resultado.innerHTML = mensagem;
         }
