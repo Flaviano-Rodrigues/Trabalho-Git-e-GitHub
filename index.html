@@ -18,16 +18,16 @@
         <h1 class="title">IMC (Índice de Massa Corporal)</h1>
         <p class="subtitle">Verifique seu IMC:</p>
 
-        <form class="form-imc" action="">
-            <input name="peso" type="tel" placeholder="Peso (Kg)">
-            <input name="altura" type="tel" placeholder="Peso (m)">
+        <form class="form-imc" id="form" action="">
+            <input id="peso" name="peso" type="tel" placeholder="Peso (Kg)">
+            <input id="altura" name="altura" type="tel" placeholder="Altura (m)">
 
-            <div class="container-radio-inputs">
-                <input name="tipo" type="radio">
-                <label>Adulto</label>
-
-                <input name="tipo" type="radio">
-                <label>Idoso</label>
+            <div class="container-select-input">
+                <select name="faixa-etaria" id="faixa-etaria" required>
+                    <option value="" disabled selected>Faixa etária</option>
+                    <option value="adulto">Adulto</option>
+                    <option value="idoso">Idoso</option>
+                </select>
             </div>
             <input class="submit-input" type="submit" value="Enviar">
         </form>
@@ -37,6 +37,7 @@
 
         </div>
     </section>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
