@@ -1,13 +1,6 @@
-/* 
-    Nota: 
-        Para não deixar o Html totalmente cru eu coloquei um pouquinho só de CSS. 
-        Nada de mais, só alguns resets básicos no Html.
-
-*/
-
-
 /* Import da Fonte */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 /* Resets Globais */
 * {
@@ -15,15 +8,45 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Quicksand';
 }
 
 /* Estilizações Globais */
-html,
-body {
+html{
+    background-image: linear-gradient( 109.6deg,  rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );
+    background-repeat: no-repeat;
     height: 100%;
-    padding: 10px;
+    width: 100%;
 }
+body {
+    color: black;
+    overflow: auto;
+    padding: 0em;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+img{
+    width: 80%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    
+}
+h1{
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
+    padding-bottom: 1em;
+}
+p{
+    color: #fff;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+
 
 /* Apenas uma estilização que uso como base para "Dark Mode". */
 .dark {
@@ -32,10 +55,49 @@ body {
 }
 
 /* Container principal */
+ 
+
 .main {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2%;
+    background-color: rgb(255, 255, 255);
+    border: 2em solid rgba(255, 255, 255, 0.4);
+    border-radius: 3em;
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: 2.5em auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 109.6deg,  rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );
+    border-radius: 2em;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 5em auto;
+    padding: 10em 2%;
+
+}
+
+.main-left{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    padding-left: 8em;
+}
+
+.main-right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
 }
 
 .subtitle {
@@ -45,19 +107,100 @@ body {
 
 /* Inputs do peso e da altura */
 input[type="tel"] {
-    padding-left: 10px;
-    height: 26px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    padding-left: 2em;
+    height: 4em;
+    width: 14.6em;
+    border: 0.5px solid #ccc;
+    border-radius: 1.6em;
+    margin-bottom: 2em;
+    background: #ecf0f3;
+    font-size: 15px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
 /* Área com os inputs radio */
 .container-radio-inputs {
-    margin-bottom: 5px;
+    margin-bottom: 5em;
+    
+}
+
+.container-select-input {
+    padding-bottom: 1em
+    
+}
+.faixa-etaria{
+    padding-left: 1.8em;
+    height: 3em;
+    width: 29.4em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    background: rgb(253, 253, 253);
+    font-size: 15px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
 /* Botão de enviar */
 .submit-input {
-    padding: 3px 9px;
+    font-size: 22px;
+    padding: 1em 3em;
+    width: 20em;
+    border-radius: 2em;
+	text-align: center;
+	cursor: pointer;
+}
+
+.submit-input-send {
+	color: rgb(255, 255, 255);
+	transition: all 0.3s;
+	position: relative;
+}
+.submit-input-send span {
+	transition: all 0.3s;
+}
+.submit-input-send::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255, 255, 255, 0.856);
+	border-bottom-color: rgba(255, 255, 255, 0.856);
+	transform: scale(0.1, 1);
+}
+.submit-input-send:hover span {
+	letter-spacing: 2px;
+}
+.submit-input-send:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.submit-input-send::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255, 255, 255, 0.151);
+}
+.submit-input-send:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+.response{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.884);
+    padding-top: 1.5em;
 }
