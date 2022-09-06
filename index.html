@@ -14,29 +14,33 @@
 
 <body>
     <section class="main">
-
-        <h1 class="title">IMC (Índice de Massa Corporal)</h1>
-        <p class="subtitle">Verifique seu IMC:</p>
-
-        <form class="form-imc" id="form" action="">
-            <input id="peso" name="peso" type="tel" placeholder="Peso (Kg)">
-            <input id="altura" name="altura" type="tel" placeholder="Altura (m)">
-
-            <div class="container-select-input">
-                <select name="faixa-etaria" id="faixa-etaria" required>
-                    <option value="" disabled selected>Faixa etária</option>
-                    <option value="adulto">Adulto</option>
-                    <option value="idoso">Idoso</option>
-                </select>
+        <div class="inner">
+            <div class="main-left">
+                <h1 class="title">IMC (Índice de Massa Corporal)</h1>
+                <p class="subtitle">Verifique seu IMC:</p>
+    
+                <form class="form-imc" id="form" action="">
+                    <input id="peso" name="peso" type="tel" placeholder="Peso (Kg)">
+                    <input id="altura" name="altura" type="tel" placeholder="Altura (m)">
+    
+                    <div class="container-select-input">
+                        <select class="faixa-etaria" name="faixa-etaria" id="faixa-etaria" required>
+                            <option value="" disabled selected>Faixa etária</option>
+                            <option value="adulto">Adulto</option>
+                            <option value="idoso">Idoso</option>
+                        </select>
+                    </div>
+                    <div class="submit-input submit-input-send" type="button" value="Enviar" onclick="handleForm()">
+                        Enviar
+                    </div>
+                </form>
+    
+                <!-- Resposta: -->
+                <div class="response" id="response"></div>
             </div>
-            <button class="submit-input" type="button" value="Enviar" onclick="handleForm()">
-                Enviar
-            </button>
-        </form>
-
-        <!-- Resposta: -->
-        <div id="response">
-
+            <div class="main-right">
+                <img src="/home/felipe/Documentos/Trabalho-Git-e-GitHub/css/image/Background_wtbck.png">
+            </div>
         </div>
     </section>
     <script src="script/script.js"></script>
