@@ -36,14 +36,14 @@ function handleForm(/*e*/) {
     } else {
         mensagem =  'Obesidade de Classe 3.'
     }
-    
+    // Esse bloco irá calcular o peso de pessoas "Idosas"
   } else if (faixaEtaria === 'idoso') {
     if (imc <= 22) {
       mensagem = 'Está abaixo do peso recomendado.';
     } else if (imc > 22 && imc < 27) {
       mensagem = 'Peso dentro da faixa recomendada.';
     } else {
-      mensagem = 'Ta bem tratado, ta bem tratado...';
+      mensagem = 'Ta bem tratado, continue assim...';
     }
   } else alert('Por favor selecione se Adulto ou Idoso. Grato!');
 
