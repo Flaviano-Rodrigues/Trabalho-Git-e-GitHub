@@ -24,17 +24,17 @@ function handleForm(/*e*/) {
 
   if (faixaEtaria === 'adulto') {
     if (imc < 18.5) {
-       mensagem =  'Baixo Peso.'
+       mensagem =  'Está abaixo do peso recomendado.'
     } else if (imc >= 18.5 && imc <= 24.9){
-        mensagem =  'Peso normal.'
+        mensagem =  'Peso dentro da faixa recomendada.'
     } else if (imc >= 25.0 && imc <= 29.9){
-        mensagem =  'Excesso de peso.'
+        mensagem =  'Ta bem tratado.'
     } else if (imc >= 30.0 && imc <= 34.9){
-        mensagem =  'Obesidade de Classe 1.'
+        mensagem =  'Muito bem tratado.'
     } else if (imc >= 35.0 && imc <= 39.9){
-        mensagem =  'Obesidade de Classe 2.'
+        mensagem =  'Muito, Muito bem tratado'
     } else {
-        mensagem =  'Obesidade de Classe 3.'
+        mensagem =  'Aprecia tudo que tem vontade.'
     }
     // Esse bloco irá calcular o peso de pessoas "Idosas"
   } else if (faixaEtaria === 'idoso') {
