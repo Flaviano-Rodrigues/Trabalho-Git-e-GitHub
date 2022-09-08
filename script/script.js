@@ -23,7 +23,7 @@ function handleForm(/*e*/) {
   }
 
   // O bloco a seguir faz a avaliação do wheight status (Adulto)
-  // a partir do resultado do IMC:
+  // a partir do resultado do IMC;
   if (faixaEtaria === 'adulto') {
     if (imc < 18.5) {
       mensagem = 'Está abaixo do peso recomendado.'
