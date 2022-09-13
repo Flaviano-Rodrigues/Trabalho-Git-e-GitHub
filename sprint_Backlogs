@@ -19,8 +19,11 @@
 
 - - - Sprint Backlog v1.0.0
 Geração do cupom;
-	Avalização dos critérios;
-	Validação;
+
+Avaliação dos critérios: Criar uma interface de formulário simples de inserção de critérios pelo cliente-empresa, envio dos critérios para um banco de dados, onde será consultado na etapa de validação.
+
+Validação;
+
 Destruição do cupom;
 
 Criação do Voucher;
