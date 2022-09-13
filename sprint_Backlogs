@@ -22,8 +22,17 @@ Geração do cupom;
 	Criar uma interface web onde o cliente possa acessar e fazer a emissão do seu cupom.
 	Este por sua vez ficará armazenado na base de dados até seu consumo ou expiração.
 
-Avaliação dos critérios: 
-	Criar uma interface de formulário simples de inserção de critérios pelo cliente-empresa, envio dos critérios para um banco de dados, onde será consultado na etapa de validação.
+Avaliação dos critérios:
+
+	*Criar uma interface de formulário simples de inserção de critérios pelo cliente-empresa, envio dos critérios para um banco de dados, onde será consultado na etapa de validação.
+
+	- Task 1: Pré set de critérios pré estabelecidos (Ex.: valor entre x e y para validação, com mín e máx para x e y coerênte com o ramo da empresa);
+	#Obs.: para evitar que o cliente-empresa use nosso software apenas para auto divulgação e coloque critério absurdo que nunca serão alcancados pelo cliente final.
+	- Task 2: Criação de uma interface minimalista para o cliente-empresa, com formulário de inserção de "critérios pré-estabelecidos" e ramo da empresa;
+	- Task 3: Análise de coerência do critério inserido pelo cliente-empresa (critérios absurdos devem ser rejeitados e será avisado o motivo da rejeição em tela);
+	- Task 4: Envio dos critérios para o banco de dados de critério do sistema;
+	- Task 5: Atualização da variável dentro do operador condicional "if" para etapa de validação;
+
 
 Validação: 
 	O sistema deve validar os dados preenchidos pelo usuário no formulário. Para tais validações podem ser usados testes como regex e validações realizadas por APIs terceiras
