@@ -4,8 +4,8 @@ function handleForm(/*e*/) {
   //e.preventDefault()
 
   //valores dos inputs
-  let peso = Number(document.getElementById('peso').value)
-  let altura = Number(document.getElementById('altura').value)
+  let peso = Number(document.getElementById('peso').value.replace(',', '.'))
+  let altura = Number(document.getElementById('altura').value.replace(',', '.'))
   let faixaEtaria = document.getElementById('faixa-etaria').value
   let mensagem
   let resultado = document.getElementById('response')
