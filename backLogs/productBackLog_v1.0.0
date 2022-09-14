@@ -1,0 +1,17 @@
+- - - Product Backlog v1.0.0
+
+- Geração do cupom:
+	O sistema deve oferecer uma interface a qual o cliente possa acessar e solicitar a criação de seu cupom de desconto.
+
+- Avaliação dos critérios para criação do cupom:
+	O sistema deve avaliar os critérios do cupom perante informações previamente estabelecidas pela loja parceira que o está ofertando.
+
+- Validação do cupom:
+	O sistema deve validar o cupom no momento da compra, a fim de confirmar sua autenticidade e liberar seu consumo.
+
+- Criação do voucher:
+	O sistema deve oferecer uma interface a qual o cliente possa acessar e solicitar a criação de seu voucher, respeitando os critérios previamente estabelecidos, caso o cliente possua dois ou mais cupons da mesma loja parceira.
+
+- Destruição do cupom/voucher:
+	O sistema deve eliminar um cupom/voucher de imediado após seu consumo ou expiração.
+
