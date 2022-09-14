@@ -1,0 +1,34 @@
+- - - Sprint v1.0.0
+
+Geração do cupom:
+	[] Task 1: Criar uma interface com para entrada de dados do cliente, os quais serão atrelados ao cupom gerado;
+	[] Task 2: Armazenagem do cupom na base de dados até que suas condições de inutilização sejam satisfeitas;
+	[] Task 3: Criar uma interface de formulário para consulta de cupons;
+
+Avaliação dos critérios:
+	Criar uma interface de formulário simples de inserção de critérios pelo cliente-empresa, envio dos critérios para um banco de dados, onde será consultado na etapa de validação.
+
+	[] Task 1: Pré set de critérios pré estabelecidos (Ex.: valor entre x e y para validação, com mín e máx para x e y coerênte com o ramo da empresa);
+	#Obs.: para evitar que o cliente-empresa use nosso software apenas para auto divulgação e coloque critério absurdo que nunca serão alcancados pelo cliente final.
+	[] Task 2: Criação de uma interface minimalista para o cliente-empresa, com formulário de inserção de "critérios pré-estabelecidos" e ramo da empresa;
+	[] Task 3: Análise de coerência do critério inserido pelo cliente-empresa (critérios absurdos devem ser rejeitados e será avisado o motivo da rejeição em tela);
+	[] Task 4: Envio dos critérios para o banco de dados de critério do sistema;
+	[] Task 5: Atualização da variável dentro do operador condicional "if" para etapa de validação;
+
+
+Validação: 
+	O sistema deve validar os dados preenchidos pelo usuário no formulário. Para tais validações podem ser usados testes como regex e validações realizadas por APIs terceiras
+
+
+Destruição do cupom:
+	Será gerado um sequência de número e letras para um cupom que terá validade para utilização de 90 dias. Quando o cupom for utilizado dentro no período de validade e após a utilização dele, ele será inutilizável. Caso não seja utilizado dentro do período, ele perderá a validade.
+
+
+Criação de Voucher:
+	[] Task 1: Saldo de cupons dos usuários (coleta valor disponível em cada cupom e verifica validade dos mesmos)
+	[] Task 2: Interface para cliente escolher quais cupons desejam somar (visualização de todos cupons e campo de seleção para escolher quais cupons serão somados);
+	[] Task 3: Somar cupons conforme regras de validação (somar valor de cada cupom conforme cristérios de validação fornecidas pela empresa parceira);
+	[] Task 4: Destruição do cupom após soma dos mesmos (após a soma dos cupons, os mesmo devem ser destruídos/extintos para que sua utilização futura seja inviável);
+	[] Task 5: Geração do Vaucher vinculado ao email (cada voucher poderá ser utilizado somente pelo cliente que gerou);
+	[] Task 6: Aplicar data de validade do Voucher (O voucher precisa ter uma data de validade para limite de utilização, conforme critérios das empresas parceiras);
+	[] Task 7: Indicar empresas parceiras para utilização (interface que lista as opções de parceiros onde o vouche é aceito e regras de utilização);
