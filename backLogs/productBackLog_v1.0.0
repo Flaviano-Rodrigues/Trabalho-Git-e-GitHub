@@ -1,4 +1,4 @@
-- - - Product Backlog v1.0.1
+- - - Product Backlog v1.0.2
 
 - Criação do cupom:
 	O sistema deve oferecer uma interface onde cliente possa acessar e solicitar a criação de seu cupom de desconto.
@@ -16,4 +16,4 @@
 	O sistema deve oferecer uma interface a qual o cliente possa acessar e solicitar a criação de seu voucher, respeitando os critérios previamente estabelecidos, caso o cliente possua dois ou mais cupons da mesma loja parceira.
 
 - Destruição do cupom/voucher:
-	O sistema deve inutilizar um cupom/voucher de imediado após seu consumo ou expiração, ainda mantendo um registro do mesmo no sistema.
+	O sistema deve inutilizar um cupom/voucher de imediado após seu consumo, expiração utilizado para gerar voucher, ainda mantendo um registro do mesmo no sistema.

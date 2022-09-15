@@ -1,4 +1,4 @@
-- - - Sprint Backlog v1.0.2
+- - - Sprint Backlog v1.0.3
 
 
 Criação do cupom:
@@ -22,8 +22,21 @@ Avaliação dos critérios:
 Validação: 
 	O sistema deve validar os dados preenchidos pelo usuário no formulário. Para tais validações podem ser usados testes como regex e validações realizadas por APIs terceiras
 
+
+
 Destruição do cupom:
-	Será gerado um sequência de número e letras para um cupom que terá validade para utilização de 90 dias. Quando o cupom for utilizado dentro no período de validade e após a utilização dele, ele será inutilizável. Caso não seja utilizado dentro do período, ele perderá a validade.
+	
+  Descritivo:
+    - Eu como usuário, quero utilizar cupons válidos em minhas compras, para obter desconto na efetivação do pagamento.
+
+  Justificativa: 
+    - Garantir que o cupom gerado pelo usuário, seja utilizado em seu período válido, propor maior credibilidade na sua utilização e evitar o uso indevido por terceiros para criação de voucher.
+
+  Solução: 
+    - Sistema verifica de forma recorrente, cupons que estão fora do prazo de validade, consumidos e utilizados para criação do voucher;
+    - Sistema inutiliza cupons com critérios de destruição.
+
+
 
 Criação de Voucher:
 	Criar interface de formulário para verificação dos cupons e mesclagem a fim de criar o voucher;
