@@ -1,8 +1,8 @@
-- - - Sprint v1.0.0
+- - - Sprint v1.0.1
 
-Geração do cupom:
+Criação do cupom:
 	[] Task 1: Criar uma interface com para entrada de dados do cliente, os quais serão atrelados ao cupom gerado;
-	[] Task 2: Armazenagem do cupom na base de dados até que suas condições de inutilização sejam satisfeitas;
+	[] Task 2: Armazenagem do cupom na base de dados até que uma condição de inutilização seja satisfeita;
 	[] Task 3: Criar uma interface de formulário para consulta de cupons;
 
 Avaliação dos critérios:
