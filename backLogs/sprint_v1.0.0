@@ -1,4 +1,4 @@
-- - - Sprint v1.0.1
+- - - Sprint v1.0.2
 
 Criação do cupom:
 	[] Task 1: Criar uma interface com para entrada de dados do cliente, os quais serão atrelados ao cupom gerado;
@@ -21,7 +21,7 @@ Validação:
 
 
 Destruição do cupom:
-	Será gerado um sequência de número e letras para um cupom que terá validade para utilização de 90 dias. Quando o cupom for utilizado dentro no período de validade e após a utilização dele, ele será inutilizável. Caso não seja utilizado dentro do período, ele perderá a validade.
+	O código do cupom será inutilizado se decorrido mais de 90 dias após a criação e não tenha sido consumido; se consumido em uma das empresas parceiras e se for solicitado a criação de voucher com o mesmo.
 
 
 Criação de Voucher:

@@ -19,4 +19,4 @@
 	O sistema deve criar o voucher com base em cupons de uma única empresa parceira, e este só poderá ser utilizado na mesma.
 
 - Destruição do cupom/voucher:
-	O sistema deve inutilizar um cupom/voucher de imediado após seu consumo ou expiração, ainda mantendo um registro do mesmo no sistema.
+	O sistema deve inutilizar um cupom/voucher de imediado após seu consumo, expiração utilizado para gerar voucher, ainda mantendo um registro do mesmo no sistema.
