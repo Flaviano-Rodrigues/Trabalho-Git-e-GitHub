@@ -1,22 +1,31 @@
 - - - Product Backlog v1.0.2
 
-- Criação do cupom:
+1. [Fibonacci 8] Avaliação dos critérios para criação do cupom:
+	O sistema deve apresentar uma interface minimalista de formulário.
+	O sistema deve avaliar os critérios do cupom perante informações previamente estabelecidas pela loja parceira que o está ofertando.
+	O sistema deve enviar os critérios para um banco de dados.
+	Os critérios estabelecidos (cadastrados no banco de dados) serão consultados na etapa de validação.
+
+
+2. [Fibonacci 3] Criação do cupom:
 	O sistema deve oferecer uma interface onde cliente possa acessar e solicitar a criação de seu cupom de desconto.
 	O sistema deve armazenar o cupom na base de dados;
 	O sistema precisa suportar a consulta de cupons previamente criados;
 	O cupom deve ter atrelado ao seu hash uma sigla única que identifica a empresa que o ofertou;
 
-- Avaliação dos critérios para criação do cupom:
-	O sistema deve avaliar os critérios do cupom perante informações previamente estabelecidas pela loja parceira que o está ofertando.
 
-- Validação do cupom:
+3. [Fibonacci 2] Destruição do cupom:
+	O sistema deve inutilizar um cupom/voucher de imediado após seu consumo, expiração utilizado para gerar voucher, ainda mantendo um registro do mesmo no sistema.
+
+
+4. [Fibonacci 5] Validação: 
 	O sistema deve validar o cupom no momento da compra, a fim de confirmar sua autenticidade e liberar seu consumo.
 
-- Criação do voucher:
+
+5. [Fibonacci 21] Criação de Voucher:
 	O sistema deve oferecer uma interface a qual o cliente possa acessar e solicitar a criação de seu voucher.
 	O sistema deve mesclar os cupons de descontos e convertê-los em um voucher de preço único.
 	O sistema deve identificar a quantidade mínima de cupons imposta pela empresa parceira para geração do voucher,
 	O sistema deve criar o voucher com base em cupons de uma única empresa parceira, e este só poderá ser utilizado na mesma.
 
-- Destruição do cupom/voucher:
-	O sistema deve inutilizar um cupom/voucher de imediado após seu consumo, expiração utilizado para gerar voucher, ainda mantendo um registro do mesmo no sistema.
+

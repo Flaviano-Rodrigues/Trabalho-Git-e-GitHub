@@ -1,11 +1,6 @@
 - - - Sprint v1.0.2
 
-Criação do cupom:
-	[] Task 1: Criar uma interface com para entrada de dados do cliente, os quais serão atrelados ao cupom gerado;
-	[] Task 2: Armazenagem do cupom na base de dados até que uma condição de inutilização seja satisfeita;
-	[] Task 3: Criar uma interface de formulário para consulta de cupons;
-
-Avaliação dos critérios:
+1. [Fibonacci 8] Avaliação dos critérios para criação do cupom:
 	Criar uma interface de formulário simples de inserção de critérios pelo cliente-empresa, envio dos critérios para um banco de dados, onde será consultado na etapa de validação.
 
 	[] Task 1: Pré set de critérios pré estabelecidos (Ex.: valor entre x e y para validação, com mín e máx para x e y coerênte com o ramo da empresa);
@@ -16,15 +11,21 @@ Avaliação dos critérios:
 	[] Task 5: Atualização da variável dentro do operador condicional "if" para etapa de validação;
 
 
-Validação: 
-	O sistema deve validar os dados preenchidos pelo usuário no formulário. Para tais validações podem ser usados testes como regex e validações realizadas por APIs terceiras
+2. [Fibonacci 3] Criação do cupom:
+	[] Task 1: Criar uma interface com para entrada de dados do cliente, os quais serão atrelados ao cupom gerado;
+	[] Task 2: Armazenagem do cupom na base de dados até que uma condição de inutilização seja satisfeita;
+	[] Task 3: Criar uma interface de formulário para consulta de cupons;
 
 
-Destruição do cupom:
+3. [Fibonacci 2] Destruição do cupom:
 	O código do cupom será inutilizado se decorrido mais de 90 dias após a criação e não tenha sido consumido; se consumido em uma das empresas parceiras e se for solicitado a criação de voucher com o mesmo.
 
 
-Criação de Voucher:
+4. [Fibonacci 5] Validação: 
+	O sistema deve validar os dados preenchidos pelo usuário no formulário. Para tais validações podem ser usados testes como regex e validações realizadas por APIs terceiras
+
+
+5. [Fibonacci 21] Criação de Voucher:
 	[] Task 1: Saldo de cupons dos usuários (coleta valor disponível em cada cupom e verifica validade dos mesmos)
 	[] Task 2: Interface para cliente escolher quais cupons desejam somar (visualização de todos cupons e campo de seleção para escolher quais cupons serão somados);
 	[] Task 3: Somar cupons conforme regras de validação (somar valor de cada cupom conforme cristérios de validação fornecidas pela empresa parceira);

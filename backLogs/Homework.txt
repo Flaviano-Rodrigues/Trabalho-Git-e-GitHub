@@ -1,0 +1,23 @@
+HOMEWORK PARA 17.09.2022
+
+T1. Refinamento do Product Backlog
+
+T2. Refinamento do Sprint Backlog
+    T2.1. Essa feature pode ser dividida em partes?
+    T2.2. Qual valor comercial essa feature oferece?
+    T2.3. Quais dados existem para mensurar o esforço?
+    T2.4. Descreva os critérios de aceitação da feature
+    T2.5. Crie uma história de usuário para cada feature.
+
+T3. Escreva um resumo que descreve o que aconteceu em sua reunião (Daily Scrum)
+
+    Daily 14/09 21:00
+
+        a)	O que avaliamos?
+            Avaliamos algumas inconsistências relacionadas ao ciclo de vida do software que deveriam ser corrigidas para que faça mais sentido.
+
+        b)	O que definimos?
+            Definimos qual feature cada um seria responsável por refinar e criar o user story. Definimos a pontuação de acordo com a sequência de Fibonacci.
+
+        c)	Quais foram os impedimentos que encontramos?
+            Escassez de informações por parte do cliente contratante para entendimento de um projeto como todo, que foi resolvido com debates internos e conclusões.
