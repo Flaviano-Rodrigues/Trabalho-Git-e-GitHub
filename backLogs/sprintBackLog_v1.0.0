@@ -1,9 +1,20 @@
-- - - Sprint Backlog v1.0.1
+- - - Sprint Backlog v1.0.2
+
 
 Criação do cupom:
-	Criar uma interface web onde o cliente possa acessar e fazer a emissão do seu cupom;
-	Este por sua vez deverá ficar armazenado na base de dados e disponível para consulta até seu consumo ou expiração;
-	Suportar, através da interface, a consulta de cupons préviamente criados;
+
+  Descritivo:
+    - Eu como usuário, quero cadastrar meus cupons de forma simples, para ter acesso rápido aos cupons de desconto
+  
+  Justificativa:
+    - Motivar o usuário, por meio de um cadastro simples e rápido, a usar os cupons do site. Como será um cadastro rápido e sem burocracia, o usuário ficará motivado ( após a criação dos cupons) a sair usando para fazer compras nas empresas credenciadas.
+
+  Solução:
+    - Criar uma interface web onde o cliente possa acessar e fazer a emissão do seu cupom;
+    - Este por sua vez deverá ficar armazenado na base de dados e disponível para consulta até seu consumo ou expiração;
+    - Suportar, através da interface, a consulta de cupons préviamente criados;
+
+
 
 Avaliação dos critérios:
 	Criar uma interface de formulário simples de inserção de critérios pelo cliente-empresa, envio dos critérios para um banco de dados, onde será consultado na etapa de validação.
