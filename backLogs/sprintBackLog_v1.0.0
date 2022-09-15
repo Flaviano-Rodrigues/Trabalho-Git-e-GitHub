@@ -1,7 +1,20 @@
 - - - Sprint Backlog v1.0.4
 
 
-Criação do cupom:
+1. [Fibonacci 8] Avaliação dos critérios para criação do cupom:
+
+  Descritivo:
+    - Eu como usuário (cliente-empresa), devo elaborar critérios e incluí-los no site para que este seja capaz de filtrar os cupons de acordo com valor, tempo e utilização, e de acordo com o ramo da minha empresa.
+
+  Justificativa: 
+    - Garantir que os critérios sejam criados para estabelecimento das diretrizes da empresa, considerando seu ramo e seus objetivos para com a plataforma de voucher.
+
+  Solução: 
+    - Sistema apresenta uma interface para inserção dos critérios.
+    - Sistema inclui em um banco de dados os critérios estabelecidos pelo cliente empresa que deverá ser consultado na validação.  verifica de forma recorrente, cupons que estão fora do prazo de validade, consumidos e utilizados para criação do voucher;
+
+
+2. [Fibonacci 3] Criação do cupom:
 
   Descritivo:
     - Eu como empresa, quero cadastrar os cupons de forma simples, para ter acesso rápido e prático aos cupons de desconto.
@@ -15,16 +28,7 @@ Criação do cupom:
     - Suportar, através da interface, a consulta de cupons préviamente criados;
 
 
-
-Avaliação dos critérios:
-	Criar uma interface de formulário simples de inserção de critérios pelo cliente-empresa, envio dos critérios para um banco de dados, onde será consultado na etapa de validação.
-
-Validação: 
-	O sistema deve validar os dados preenchidos pelo usuário no formulário. Para tais validações podem ser usados testes como regex e validações realizadas por APIs terceiras
-
-
-
-Destruição do cupom:
+3. [Fibonacci 2] Destruição do cupom:
 	
   Descritivo:
     - Eu como usuário, quero utilizar cupons válidos em minhas compras, para obter desconto na efetivação do pagamento.
@@ -37,7 +41,10 @@ Destruição do cupom:
     - Sistema inutiliza cupons com critérios de destruição.
 
 
+4. [Fibonacci 5] Validação: 
+	O sistema deve validar os dados preenchidos pelo usuário no formulário. Para tais validações podem ser usados testes como regex e validações realizadas por APIs terceiras
 
-Criação de Voucher:
+
+5. [Fibonacci 21] Criação de Voucher:
 	Criar interface de formulário para verificação dos cupons e mesclagem a fim de criar o voucher;
 	Cupons utilizados nessa operação devem ser inutilizados imediatamente;

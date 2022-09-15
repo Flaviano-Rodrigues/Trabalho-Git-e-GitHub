@@ -3,4 +3,7 @@ Revisão do Product Backlog;
 Acordada a distruibuição da confecção de user story entre os desenvolvedores;
 Discutido a pontuação/nível de dificuldade do desenvolvimento das features;
 Definida a prioridade de desenvolvimento das features;
-	(Avaliação, Criação do cupom, Destruição do cupom, Validação, Criação do 		voucher);
+	(Avaliação, Criação do cupom, Destruição do cupom, Validação, Criação do voucher);
+
+
+
