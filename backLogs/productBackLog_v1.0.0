@@ -1,7 +1,10 @@
-- - - Product Backlog v1.0.0
+- - - Product Backlog v1.0.1
 
-- Geração do cupom:
+- Criação do cupom:
 	O sistema deve oferecer uma interface onde cliente possa acessar e solicitar a criação de seu cupom de desconto.
+	O sistema deve armazenar o cupom na base de dados;
+	O sistema precisa suportar a consulta de cupons previamente criados;
+	O cupom deve ter atrelado ao seu hash uma sigla única que identifica a empresa que o ofertou;
 
 - Avaliação dos critérios para criação do cupom:
 	O sistema deve avaliar os critérios do cupom perante informações previamente estabelecidas pela loja parceira que o está ofertando.
@@ -14,4 +17,3 @@
 
 - Destruição do cupom/voucher:
 	O sistema deve inutilizar um cupom/voucher de imediado após seu consumo ou expiração, ainda mantendo um registro do mesmo no sistema.
-	

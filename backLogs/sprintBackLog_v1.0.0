@@ -1,8 +1,9 @@
-- - - Sprint Backlog v1.0.0
+- - - Sprint Backlog v1.0.1
 
-Geração do cupom:
-	Criar uma interface web onde o cliente possa acessar e fazer a emissão do seu cupom.
-	Este por sua vez ficará armazenado na base de dados e disponível para consulta até seu consumo ou expiração.
+Criação do cupom:
+	Criar uma interface web onde o cliente possa acessar e fazer a emissão do seu cupom;
+	Este por sua vez deverá ficar armazenado na base de dados e disponível para consulta até seu consumo ou expiração;
+	Suportar, através da interface, a consulta de cupons préviamente criados;
 
 Avaliação dos critérios:
 	Criar uma interface de formulário simples de inserção de critérios pelo cliente-empresa, envio dos critérios para um banco de dados, onde será consultado na etapa de validação.
